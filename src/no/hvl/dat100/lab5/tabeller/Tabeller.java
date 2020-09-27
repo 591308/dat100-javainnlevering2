@@ -9,15 +9,15 @@ public class Tabeller {
 	
 	 //b)
 	public static String tilStreng(int[] tabell) {
-		String streng = ("[");
+		String streng = "[";
 		for (int i=0; i<tabell.length; i++) {
 			if(i != tabell.length-1) {
-				streng += (tabell[i] + ", ");					
+				streng += tabell[i] + ", ";					
 			} else {
-				streng += (tabell[i]);
+				streng += tabell[i];
 			}
 		}
-		streng += ("]");
+		streng += "]";
 		System.out.println(streng);
 		return streng;
 		
